@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test for Sean</title>
+    <script src="modules.js"></script>
+</head>
+
+<body>
+    <table class="sean-table">
+    </table>
+    <script>
+    // to put things into the table, we need to ref the table first
+    var table = document.querySelector('.sean-table');
+
+    dataHandler.getData(function(data) {
+        cmpHandler.createTable(table, data);
+    });
+    </script>
+</body>
+
+</html>
